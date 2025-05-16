@@ -41,3 +41,9 @@ The demonstration shows the interaction between the publisher and subscriber app
    - Each processed message is displayed in the console
 
 The terminal screenshots demonstrate this workflow, with the publisher execution on the top picture and the subscriber receiving and processing messages on the bottom picture.
+
+## Monitoring chart based on publisher
+
+![Image](https://github.com/user-attachments/assets/6e3947e6-ac36-49af-98a3-cc01ebac98a0)
+
+The image shows a spike in the RabbitMQ message rate chart, which corresponds to the times when I ran the publisher program. This indicates that the spike was caused by messages being published to the queue, confirming that the publisher is functioning and interacting correctly with RabbitMQ.   
