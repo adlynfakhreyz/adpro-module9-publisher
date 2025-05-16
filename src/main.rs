@@ -14,6 +14,10 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
         println!("Message received on handler 1: {:?}", message);
         Ok(())
     }
+
+    fn get_handler_action(&self) -> String {
+        "process_user_created".to_string()
+    }
 }
 
 fn main() {
@@ -22,27 +26,27 @@ fn main() {
 
     _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage {
         user_id: "1".to_owned(),
-        user_name: "2306241713y-Amir".to_owned(),
+        user_name: "2306241713-Amir".to_owned(),
     });
 
     _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage {
         user_id: "2".to_owned(),
-        user_name: "2306241713y-Budi".to_owned(),
+        user_name: "2306241713-Budi".to_owned(),
     });
 
     _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage {
         user_id: "3".to_owned(),
-        user_name: "2306241713y-Cica".to_owned(),
+        user_name: "2306241713-Cica".to_owned(),
     });
 
     _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage {
         user_id: "4".to_owned(),
-        user_name: "2306241713y-Dira".to_owned(),
+        user_name: "2306241713-Dira".to_owned(),
     });
 
     _ = p.publish_event("user_created".to_owned(), UserCreatedEventMessage {
         user_id: "5".to_owned(),
-        user_name: "2306241713y -Emir".to_owned(),
+        user_name: "2306241713-Emir".to_owned(),
     });
 }
 
