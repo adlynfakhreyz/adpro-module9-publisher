@@ -18,6 +18,11 @@ The URL `amqp://guest:guest@localhost:5672` is used in both publisher and subscr
 
 Using the same URL ensures both programs connect to the same message broker instance, enabling communication between the publisher and subscriber.
 
-# Running RabbitMQ as Message broker
+## Running RabbitMQ as Message broker
 
 ![Image](https://github.com/user-attachments/assets/46e969af-9d3c-46bc-bfe5-4c859cf42961)
+
+## Sending and Processing Event
+
+![Image](https://github.com/user-attachments/assets/63204fe2-5d19-47bf-8fbe-82ea6415b00b)
+![Image](https://github.com/user-attachments/assets/b84ad69d-7d4d-428c-807a-fd16b45094d1)
