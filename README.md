@@ -17,3 +17,7 @@ The URL `amqp://guest:guest@localhost:5672` is used in both publisher and subscr
   - `5672` - The default port for AMQP connections
 
 Using the same URL ensures both programs connect to the same message broker instance, enabling communication between the publisher and subscriber.
+
+# Running RabbitMQ as Message broker
+
+![Image](https://github.com/user-attachments/assets/46e969af-9d3c-46bc-bfe5-4c859cf42961)
