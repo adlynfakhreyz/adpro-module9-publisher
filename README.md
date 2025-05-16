@@ -26,3 +26,18 @@ Using the same URL ensures both programs connect to the same message broker inst
 
 ![Image](https://github.com/user-attachments/assets/63204fe2-5d19-47bf-8fbe-82ea6415b00b)
 ![Image](https://github.com/user-attachments/assets/b84ad69d-7d4d-428c-807a-fd16b45094d1)
+
+The demonstration shows the interaction between the publisher and subscriber applications:
+
+1. Publisher Operation:
+   - When executed with `cargo run`, the publisher sends 5 user creation events
+   -  sequential IDs (1-5) paired with names (Amir, Budi, Cica, Dira, Emir)Each event is a UserCreatedEventMessage containing
+   - Messages are sent to the RabbitMQ message broker
+
+2. Subscriber Operation:
+   - Connects to RabbitMQ using the URL "amqp://guest:guest@localhost:5672"
+   - Listens continuously on the "user_created" queue
+   - When messages arrive, they are processed by UserCreatedHandler.handle()
+   - Each processed message is displayed in the console
+
+The terminal screenshots demonstrate this workflow, with the publisher execution on the top picture and the subscriber receiving and processing messages on the bottom picture.
